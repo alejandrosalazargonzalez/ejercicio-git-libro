@@ -101,5 +101,10 @@ Archivos sin seguimiento:
 
 sin cambios agregados al commit (usa "git add" y/o "git commit -a")
 
-    
+    git add .
+
+    git commit -m "Añadido capítulo 2  y actualización del README."
+[main 7c68b25] Añadido capítulo 2  y actualización del README.
+ 2 files changed, 31 insertions(+), 1 deletion(-)
+ create mode 100644 capitulos/Capitulo2.txt
 ```

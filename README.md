@@ -108,3 +108,86 @@ sin cambios agregados al commit (usa "git add" y/o "git commit -a")
  2 files changed, 31 insertions(+), 1 deletion(-)
  create mode 100644 capitulos/Capitulo2.txt
 ```
+### Compruebo las diferencias de esta versión con las 2 anteriores 
+````code
+    git diff HEAD~2..HEAD 
+diff --git a/README.md b/README.md
+index 6fd3fb7..c38a14b 100644
+--- a/README.md
++++ b/README.md
+@@ -76,4 +76,35 @@ Date:   Thu Oct 10 18:01:20 2024 +0100
+ ```
+ 
+ ## Ejercicio 2
+-### Creo el Capitulo3.txt
+\ No newline at end of file
++### Creo el Capitulo2.txt
++```code
++El flujo de trabajo básico con Git consiste en:
++ 1- Hacer cambios en el repositorio.
++ 2- Añadir los cambios a la zona de intercambio temporal.
++ 3- Hacer un commit de los cambios.
++```
++### Subir los cambios a la zona de intercambio
++```code
++    git status 
++En la rama main
++Tu rama está adelantada a 'origin/main' por 2 commits.
++  (usa "git push" para publicar tus commits locales)
++
++Cambios no rastreados para el commit:
++  (usa "git add <archivo>..." para actualizar lo que será confirmado)
++  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
++        modificados:     README.md
++
++Archivos sin seguimiento:
++  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
++        capitulos/Capitulo2.txt
++
++sin cambios agregados al commit (usa "git add" y/o "git commit -a")
++
++    git add .
++
++    git commit -m "Añadido capítulo 2  y actualización del README."
++[main 7c68b25] Añadido capítulo 2  y actualización del README.
++ 2 files changed, 31 insertions(+), 1 deletion(-)
++ create mode 100644 capitulos/Capitulo2.txt
++```
+diff --git a/capitulos/Capitulo2.txt b/capitulos/Capitulo2.txt
+new file mode 100644
+index 0000000..e2034e0
+--- /dev/null
++++ b/capitulos/Capitulo2.txt
+@@ -0,0 +1,4 @@
++El flujo de trabajo básico con Git consiste en:
++ 1- Hacer cambios en el repositorio.
++ 2- Añadir los cambios a la zona de intercambio temporal.
++ 3- Hacer un commit de los cambios.
+\ No newline at end of file
+(END)
+````
+## Ejercicio 3
+### Creo el capitulo 3
+```code
+Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas.
+```
+### Añado los cambios a la zona temporal
+```code
+    git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 4 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        modificados:     README.md
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        capitulos/Capitulo3.txt
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")ç
+
+
+```

@@ -76,4 +76,30 @@ Date:   Thu Oct 10 18:01:20 2024 +0100
 ```
 
 ## Ejercicio 2
-### Creo el Capitulo3.txt
+### Creo el Capitulo2.txt
+```code
+El flujo de trabajo básico con Git consiste en:
+ 1- Hacer cambios en el repositorio.
+ 2- Añadir los cambios a la zona de intercambio temporal.
+ 3- Hacer un commit de los cambios.
+```
+### Subir los cambios a la zona de intercambio
+```code
+    git status 
+En la rama main
+Tu rama está adelantada a 'origin/main' por 2 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        modificados:     README.md
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        capitulos/Capitulo2.txt
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+
+    
+```

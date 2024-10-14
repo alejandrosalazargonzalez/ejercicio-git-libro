@@ -197,7 +197,7 @@ sin cambios agregados al commit (usa "git add" y/o "git commit -a")ç
  create mode 100644 capitulos/Capitulo3.txt
 ```
 ### ejecuto el git log y el git diff
-```code
+````code
     git log
 commit c01d770a666b1016fc785ed630840eb8a02e97ba (HEAD -> main)
 Author: alejandrosalazargonzalez <alejandrosalazargonzalez2004@gmail.com>
@@ -241,11 +241,11 @@ Date:   Thu Oct 10 18:01:20 2024 +0100
 
     Initial commit
 (END)
-```
+````
 ---
 ---
-```code
-git diff 6b20ec1667976c5a0897caeb91f84b60b49734f8..HEAD
+````code
+    git diff 6b20ec1667976c5a0897caeb91f84b60b49734f8..HEAD
 diff --git a/README.md b/README.md
 index 9a06b52..82683d2 100644
 --- a/README.md
@@ -480,4 +480,10 @@ index 0000000..534b9a9
 +Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas.
 \ No newline at end of file
 (END)
+````
+## Ejercicio 2
+### Creo el indice 
+```code
+Indice de los cápitulos, con conceptos avanzados de git
 ```
+

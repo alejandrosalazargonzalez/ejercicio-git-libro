@@ -486,4 +486,13 @@ index 0000000..534b9a9
 ```code
 Indice de los cápitulos, con conceptos avanzados de git
 ```
-
+### Añadir los cambios a la zona de intercambio temporal.
+```code
+ git add .
+ git commit -m "Indice de los cápitulos, con conceptos avanzados de git"
+```
+### Mostrar quién ha hecho cambios sobre el fichero indice.txt.
+```code
+    git annotate capitulos/Indice.txt
+a7c792b3        (alejandrosalazargonzalez       2024-10-14 15:37:31 +0100       1)Indice de los cápitulos, con conceptos avanzados de git
+```

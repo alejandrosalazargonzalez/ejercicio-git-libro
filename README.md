@@ -481,7 +481,7 @@ index 0000000..534b9a9
 \ No newline at end of file
 (END)
 ````
-## Ejercicio 2
+## Ejercicio 4
 ### Creo el indice 
 ```code
 Indice de los cápitulos, con conceptos avanzados de git
@@ -496,3 +496,14 @@ Indice de los cápitulos, con conceptos avanzados de git
     git annotate capitulos/Indice.txt
 a7c792b3        (alejandrosalazargonzalez       2024-10-14 15:37:31 +0100       1)Indice de los cápitulos, con conceptos avanzados de git
 ```
+## Ejercicio 5
+###  Creo la rama bibliotea y muestro las ramas del repositorio
+```code
+    git branch bibliografia
+    git branch -av
+warning: ignorando referencia rota refs/remotes/origin/main
+  bibliografia ee78854 se acaba el ejercicio 4
+* main         ee78854 [desaparecido] se acaba el ejercicio 4
+```
+## Ejercicio 6
+### 

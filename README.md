@@ -665,4 +665,14 @@ Loeliger, J. and McCullough, M. Version control with Git. O’Reilly.
 [main a9b78ee] Añadida nueva referencia bibliográfica
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
-
+### Uno las dos ramas
+```code 
+    qit merge bibliografia
+Auto-fusionando bibliografia.txt
+CONFLICTO (contenido): Conflicto de fusión en bibliografia.txt
+Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+```
+### Arreglo lo que me pide
+```code
+nano bibliografia.txt 
+```

@@ -634,3 +634,22 @@ git log --graph --all --oneline
 ```code
 git branch bibliografia
 ```
+### Cambiar a la rama bibliografia
+```code
+    git checkout bibliografia 
+Cambiado a rama 'bibliografia'
+```
+### Agregar datos al fichero bibliografia
+```code
+Ryan Hodson. Ry’s Git Tutorial. Smashwords (2014)
+```
+### Cambiar a la rama main
+```code
+    git checkout main 
+M       bibliografia.txt
+Cambiado a rama 'main'
+```
+### Cambiar fichero bibliografia
+```code
+Loeliger, J. and McCullough, M. Version control with Git. O’Reilly.
+```

@@ -512,3 +512,26 @@ warning: ignorando referencia rota refs/remotes/origin/main
 ```
 ### Añado los cambios al espacio de intercambio
 ```code
+    git add .
+    git commit -m "Añado el capitulo 4"
+[main 85be25d] Añado el capitulo 4
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 capitulos/Capitulo4.txt
+```
+### Ejecuto el comando git log --graph --all --oneline
+```code
+    git log --graph --all --oneline
+* 85be25d (HEAD -> main, origin/main) Añado el capitulo 4
+* 684e1f8 ultimo cambio de clase
+* ee78854 (bibliografia) se acaba el ejercicio 4
+* a7c792b Indice de los cápitulos, con conceptos avanzados de git
+* 22c7aa8 Ultimo commit antes de acabar la clase 10/10/2024
+* c01d770 Actualizacion del README
+* af2c8e6 Añadido capitulo 3 y cambios al README
+* 51c427a añado el paso anterior al informe del README
+* 7c68b25 Añadido capítulo 2  y actualización del README.
+* 8e51745 actualizacion del README
+* 8331191 Añadido capitulo 1
+* 6b20ec1 Initial commit
+```
+## Ejercicio 7

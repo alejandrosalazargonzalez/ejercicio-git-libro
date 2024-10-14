@@ -535,3 +535,102 @@ warning: ignorando referencia rota refs/remotes/origin/main
 * 6b20ec1 Initial commit
 ```
 ## Ejercicio 7
+### Cambiar a la rama bibliografía
+```code 
+    git checkout bibliografia 
+Cambiado a rama 'bibliografia'
+```
+### Crear el fichero bibliografia.txt
+```code
+Chacon, S. and Straub, B. Pro Git. Apress.
+```
+### Añadir cambios a la zona de intercambio temporal
+```code
+    git add .
+    git commit -m "Añadida la primera referencia bibliografica"
+[bibliografia 3158de9] Añadida la primera referencia bibliografica
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bibliografia.txt
+```
+### Mostrar historial del repositorio incluyendo ramas
+```code
+    git log --graph --all --oneline
+* 3158de9 (HEAD -> bibliografia) Añadida la primera referencia bibliografica
+| * a37524d (main) cambios antes de cambiar de rama
+| * 85be25d (origin/main) Añado el capitulo 4
+| * 684e1f8 ultimo cambio de clase
+|/  
+* ee78854 se acaba el ejercicio 4
+* a7c792b Indice de los cápitulos, con conceptos avanzados de git
+* 22c7aa8 Ultimo commit antes de acabar la clase 10/10/2024
+* c01d770 Actualizacion del README
+* af2c8e6 Añadido capitulo 3 y cambios al README
+* 51c427a añado el paso anterior al informe del README
+* 7c68b25 Añadido capítulo 2  y actualización del README.
+* 8e51745 actualizacion del README
+* 8331191 Añadido capitulo 1
+* 6b20ec1 Initial commit
+```
+## Ejercicio 8
+### Fusionar la rama bibliografía con la rama main.
+```code 
+    git checkout main 
+Cambiado a rama 'main'
+    git merge bibliografia 
+Merge made by the 'ort' strategy.
+ bibliografia.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bibliografia.txt
+```
+### Mostrar la historia del repositorio incluyendo todas las ramas
+```code
+git log --graph --all --oneline
+*   9c01eea (HEAD -> main) Merge branch 'bibliografia'
+|\  
+| * 3158de9 (bibliografia) Añadida la primera referencia bibliografica
+* | a37524d cambios antes de cambiar de rama
+* | 85be25d (origin/main) Añado el capitulo 4
+* | 684e1f8 ultimo cambio de clase
+|/  
+* ee78854 se acaba el ejercicio 4
+* a7c792b Indice de los cápitulos, con conceptos avanzados de git
+* 22c7aa8 Ultimo commit antes de acabar la clase 10/10/2024
+* c01d770 Actualizacion del README
+* af2c8e6 Añadido capitulo 3 y cambios al README
+* 51c427a añado el paso anterior al informe del README
+* 7c68b25 Añadido capítulo 2  y actualización del README.
+* 8e51745 actualizacion del README
+* 8331191 Añadido capitulo 1
+* 6b20ec1 Initial commit
+```
+### Elimino la rama bibliografia
+```code
+    git branch -d bibliografia
+Eliminada la rama bibliografia (era 3158de9).
+```
+### Muestro el historial del repositorio incluyendo ramas
+```code
+git log --graph --all --oneline
+*   9c01eea (HEAD -> main) Merge branch 'bibliografia'
+|\  
+| * 3158de9 Añadida la primera referencia bibliografica
+* | a37524d cambios antes de cambiar de rama
+* | 85be25d (origin/main) Añado el capitulo 4
+* | 684e1f8 ultimo cambio de clase
+|/  
+* ee78854 se acaba el ejercicio 4
+* a7c792b Indice de los cápitulos, con conceptos avanzados de git
+* 22c7aa8 Ultimo commit antes de acabar la clase 10/10/2024
+* c01d770 Actualizacion del README
+* af2c8e6 Añadido capitulo 3 y cambios al README
+* 51c427a añado el paso anterior al informe del README
+* 7c68b25 Añadido capítulo 2  y actualización del README.
+* 8e51745 actualizacion del README
+* 8331191 Añadido capitulo 1
+* 6b20ec1 Initial commit
+```
+## Ejercicio 9
+### Crear la rama bibliografía.
+```code
+git branch bibliografia
+```

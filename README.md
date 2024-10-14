@@ -506,4 +506,9 @@ warning: ignorando referencia rota refs/remotes/origin/main
 * main         ee78854 [desaparecido] se acaba el ejercicio 4
 ```
 ## Ejercicio 6
-### 
+### Creo el archivo capitulo4.txt
+```code
+  En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
+```
+### Añado los cambios al espacio de intercambio
+```code

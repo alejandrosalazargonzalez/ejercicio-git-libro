@@ -643,6 +643,11 @@ Cambiado a rama 'bibliografia'
 ```code
 Ryan Hodson. Ry’s Git Tutorial. Smashwords (2014)
 ```
+### hago un commit 
+```code
+    git commit -m "se ha cambiado el fichero bibliografia.txt"
+[bibliografia 309a625] se ha cambiado el fichero bibliografia.txt
+```
 ### Cambiar a la rama main
 ```code
     git checkout main 
@@ -653,3 +658,11 @@ Cambiado a rama 'main'
 ```code
 Loeliger, J. and McCullough, M. Version control with Git. O’Reilly.
 ```
+### Subo los cambios a la zona de intercambio temporal
+```code
+    git add .
+    git commit -m "Añadida nueva referencia bibliográfica"
+[main a9b78ee] Añadida nueva referencia bibliográfica
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+

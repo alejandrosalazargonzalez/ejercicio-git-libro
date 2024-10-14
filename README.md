@@ -676,3 +676,39 @@ Fusión automática falló; arregle los conflictos y luego realice un commit con
 ```code
 nano bibliografia.txt 
 ```
+
+### Hago el ultimo commit y muestro el ultimo historial
+```code
+git commit -a -m "Solucionado conflicto bibliografía."
+ git log --graph --all --oneline
+[main 68ed887] Solucionado conflicto bibliografía.
+*   68ed887 (HEAD -> main) Solucionado conflicto bibliografía.
+|\  
+| * 9f4148f (bibliografia) Añadida nueva referencia bibliográfica.
+* | 6a19808 Añadida nueva referencia bibliográfica.
+|/  
+*   3a3789c (origin/main, origin/HEAD) commit antes del cambio
+|\  
+| * 309a625 se ha cambiado el fichero bibliografia.txt
+* | a9b78ee Añadida nueva referencia bibliográfica
+* | a0299bc cambios antes de cambiar de rama
+* | dc059c8 Commit antes de cambiar a la nueva rama bibliografia
+|/  
+*   9c01eea Merge branch 'bibliografia'
+|\  
+| * 3158de9 Añadida la primera referencia bibliografica
+* | a37524d cambios antes de cambiar de rama
+* | 85be25d Añado el capitulo 4
+* | 684e1f8 ultimo cambio de clase
+|/  
+* ee78854 se acaba el ejercicio 4
+* a7c792b Indice de los cápitulos, con conceptos avanzados de git
+* 22c7aa8 Ultimo commit antes de acabar la clase 10/10/2024
+* c01d770 Actualizacion del README
+* af2c8e6 Añadido capitulo 3 y cambios al README
+* 51c427a añado el paso anterior al informe del README
+* 7c68b25 Añadido capítulo 2  y actualización del README.
+* 8e51745 actualizacion del README
+* 8331191 Añadido capitulo 1
+* 6b20ec1 Initial commit
+```

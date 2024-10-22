@@ -209,3 +209,24 @@ Etiqueta '1.0.0' eliminada (era b32d7b2)
 To https://github.com/alejandrosalazargonzalez/ejercicio-git-libro
  - [deleted]         1.0.0
 ```
+## Ejercicio 8: Restablecer un commit (Reset)
+```code
+    git add .
+    git commit -m "Ejercicios hasta el 8"
+[tags 97f2c25] Ejercicios hasta el 8
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+
+    git push origin tags 
+Enumerando objetos: 33, listo.
+Contando objetos: 100% (32/32), listo.
+Compresión delta usando hasta 6 hilos
+Comprimiendo objetos: 100% (25/25), listo.
+Escribiendo objetos: 100% (25/25), 2.93 KiB | 300.00 KiB/s, listo.
+Total 25 (delta 16), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (16/16), completed with 4 local objects.
+To https://github.com/alejandrosalazargonzalez/ejercicio-git-libro
+   c658461..97f2c25  tags -> tags
+
+    git reset --hard
+HEAD está ahora en 97f2c25 Ejercicios hasta el 8
+```

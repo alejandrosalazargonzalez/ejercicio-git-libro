@@ -185,4 +185,27 @@ bae2@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ git commit -m "merg
  1 file changed, 1 insertion(+)
  ```
  ## Ejercicio 6: Revertir un merge
- ###
+ ### realizo un merge
+ ```code 
+    git merge tags nueva-funcionalidad 
+Auto-fusionando capitulos/Capitulo2.txt
+CONFLICTO (contenido): Conflicto de fusión en capitulos/Capitulo2.txt
+```
+### realizo el git revert
+```code
+    git revert -m 1 cb3e981
+[tags c01aa4b] Revert "merge aa revertir"
+ 1 file changed, 2 deletions(-)
+```
+## Ejercicio 7: Eliminar una etiqueta
+### Borra la etiqueta v1.0 
+```code
+    git tag 
+1.0.0
+1.0.1
+    git tag -d 1.0.0
+Etiqueta '1.0.0' eliminada (era b32d7b2)
+    git push origin :refs/tags/1.0.0
+To https://github.com/alejandrosalazargonzalez/ejercicio-git-libro
+ - [deleted]         1.0.0
+```

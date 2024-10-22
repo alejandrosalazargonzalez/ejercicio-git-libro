@@ -23,10 +23,4 @@ Cambios no rastreados para el commit:
 
 sin cambios agregados al commit (usa "git add" y/o "git commit -a")
 
-    git add .
-
-    git commit -m "Agregada una linea en Capitulo1.txt"
-[tags 2c4f64f] Agregada una linea en Capitulo1.txt
- 2 files changed, 26 insertions(+), 715 deletions(-)
- rewrite README.md (98%)
 ```

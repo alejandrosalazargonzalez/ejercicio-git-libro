@@ -163,4 +163,26 @@ index ce1b8bb..0000000
 -En este capítulo veremos cómo gestionar múltiples ramas en Git.
 ```
 ## Ejercicio 5: Resolver conflictos de fusión
-###
+### merge de los cambios en las ramas
+```code 
+git merge tags nueva-funcionalidad 
+Auto-fusionando README.md
+CONFLICTO (contenido): Conflicto de fusión en README.md
+Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+bae2@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ git status 
+En la rama tags
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        modificados:     README.md
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+bae2@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ git add .
+bae2@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ git co
+commit   config   
+bae2@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ git commit -m "merge del readme"
+[tags 1643c4f] merge del readme
+ 1 file changed, 1 insertion(+)
+ ```
+ ## Ejercicio 6: Revertir un merge
+ ###

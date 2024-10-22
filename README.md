@@ -163,3 +163,4 @@ index ce1b8bb..0000000
 -En este capítulo veremos cómo gestionar múltiples ramas en Git.
 ```
 ## Ejercicio 5: Resolver conflictos de fusión
+###
